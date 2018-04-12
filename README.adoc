@@ -1,0 +1,45 @@
+## Tailers performance tests
+
+all tests run on dev11
+
+### run 12/4/2018 net.openhft:chronicle-queue:jar:4.6.91
+
+```
+Benchmark                                                   Mode      Cnt        Score    Error  Units
+TailersBenchmark.tailerRO_data                            sample  5845719     8682.196 ± 13.217  ns/op
+TailersBenchmark.tailerRO_data:tailerRO_data·p0.00        sample              7664.000           ns/op
+TailersBenchmark.tailerRO_data:tailerRO_data·p0.50        sample              8240.000           ns/op
+TailersBenchmark.tailerRO_data:tailerRO_data·p0.90        sample              9120.000           ns/op
+TailersBenchmark.tailerRO_data:tailerRO_data·p0.95        sample              9600.000           ns/op
+TailersBenchmark.tailerRO_data:tailerRO_data·p0.99        sample             18080.000           ns/op
+TailersBenchmark.tailerRO_data:tailerRO_data·p0.999       sample             39936.000           ns/op
+TailersBenchmark.tailerRO_data:tailerRO_data·p0.9999      sample            105728.000           ns/op
+TailersBenchmark.tailerRO_data:tailerRO_data·p1.00        sample           6782976.000           ns/op
+TailersBenchmark.tailerRO_empty                           sample  4261508     3232.026 ± 15.582  ns/op
+TailersBenchmark.tailerRO_empty:tailerRO_empty·p0.00      sample              2636.000           ns/op
+TailersBenchmark.tailerRO_empty:tailerRO_empty·p0.50      sample              2804.000           ns/op
+TailersBenchmark.tailerRO_empty:tailerRO_empty·p0.90      sample              2976.000           ns/op
+TailersBenchmark.tailerRO_empty:tailerRO_empty·p0.95      sample              3620.000           ns/op
+TailersBenchmark.tailerRO_empty:tailerRO_empty·p0.99      sample              5408.000           ns/op
+TailersBenchmark.tailerRO_empty:tailerRO_empty·p0.999     sample            120510.848           ns/op
+TailersBenchmark.tailerRO_empty:tailerRO_empty·p0.9999    sample            260018.739           ns/op
+TailersBenchmark.tailerRO_empty:tailerRO_empty·p1.00      sample           6397952.000           ns/op
+TailersBenchmark.tailerRO_nodata                          sample  5842119     8679.434 ± 13.301  ns/op
+TailersBenchmark.tailerRO_nodata:tailerRO_nodata·p0.00    sample              7552.000           ns/op
+TailersBenchmark.tailerRO_nodata:tailerRO_nodata·p0.50    sample              8192.000           ns/op
+TailersBenchmark.tailerRO_nodata:tailerRO_nodata·p0.90    sample              9120.000           ns/op
+TailersBenchmark.tailerRO_nodata:tailerRO_nodata·p0.95    sample              9824.000           ns/op
+TailersBenchmark.tailerRO_nodata:tailerRO_nodata·p0.99    sample             17920.000           ns/op
+TailersBenchmark.tailerRO_nodata:tailerRO_nodata·p0.999   sample             39744.000           ns/op
+TailersBenchmark.tailerRO_nodata:tailerRO_nodata·p0.9999  sample            105344.000           ns/op
+TailersBenchmark.tailerRO_nodata:tailerRO_nodata·p1.00    sample           6922240.000           ns/op
+TailersBenchmark.tailerRW_data                            sample  7529305       92.313 ±  0.175  ns/op
+TailersBenchmark.tailerRW_data:tailerRW_data·p0.00        sample                72.000           ns/op
+TailersBenchmark.tailerRW_data:tailerRW_data·p0.50        sample                92.000           ns/op
+TailersBenchmark.tailerRW_data:tailerRW_data·p0.90        sample               106.000           ns/op
+TailersBenchmark.tailerRW_data:tailerRW_data·p0.95        sample               113.000           ns/op
+TailersBenchmark.tailerRW_data:tailerRW_data·p0.99        sample               115.000           ns/op
+TailersBenchmark.tailerRW_data:tailerRW_data·p0.999       sample               157.000           ns/op
+TailersBenchmark.tailerRW_data:tailerRW_data·p0.9999      sample              4076.278           ns/op
+TailersBenchmark.tailerRW_data:tailerRW_data·p1.00        sample             62336.000           ns/op
+```
